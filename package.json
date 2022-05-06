@@ -1,0 +1,29 @@
+g{
+  "name": "gtm-ss-traffic-type-classifier",
+  "version": "1.0.0",
+  "description": "Classify analytics events based on text in the HTTP User Agent, IP Address, Hostname, URL or any Event Parameter. Use in triggers, or to populate the traffic_type event parameter used in GA4 filters.",
+  "main": "template.tpl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qbe-digital-analytics/gtm-ss-traffic-type-classifier.git"
+  },
+  "keywords": [
+    "gtm",
+    "server",
+    "site",
+    "template",
+    "google",
+    "analytics",
+    "filters",
+    "ga4"
+  ],
+  "author": "Brandon Lau",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/qbe-digital-analytics/gtm-ss-traffic-type-classifier/issues"
+  },
+  "homepage": "https://github.com/qbe-digital-analytics/gtm-ss-traffic-type-classifier#readme"
+}

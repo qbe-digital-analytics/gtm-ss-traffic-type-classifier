@@ -1,0 +1,5 @@
+homepage: "https://www.qbe.com/au"
+documentation: "https://github.com/qbe-digital-analytics/gtm-ss-traffic-type-classifier"
+versions:
+  - sha: 1
+    changeNotes: Initial release.
