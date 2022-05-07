@@ -3,7 +3,7 @@
 
 
 ## What is the Traffic Type Classifier?
-The Traffic Type Classifier is a Custom Template for GTM server-side which labels and filters your events by searching event parameters in the event payload using particular search criteria.  Multiple classification rules can be setup run in order of priority. Once a match for your traffic is found, a classification string is returned. If no match is found, a default string is returned. This can be used to populate the `traffic_type` event parameter in GA4 filtering, or as filter criteria in GTM server-side triggers.
+The Traffic Type Classifier is a Custom Template for GTM server-side which labels and filters your events by searching event parameters in the event payload using particular search criteria.  Multiple classification rules can be setup run in order of priority. Once a match for your traffic is found, a classification string is returned. If no match is found, a default string is returned. This can be used to populate the `traffic_type` event parameter in GA4 filtering, or as a filter condition in GTM server-side triggers.
 
 The Traffic Type Classifier has 5 different types:
 
@@ -35,17 +35,17 @@ Checking the "Enable Classifier" checkbox will enable all classification rules f
 ### Adding a new Classification
 The below example shows how to add a new classification for the *Custom Bot* classifier, but the interface is the same for all other classifiers (except for *Default Bots*).
 
-Start by clicking "Add Row":
+Start by clicking **Add Row**:
 
 
 ![Add Row Image](images/addRow.png)
 
 
  1. Now, enter a **Name** for the classification. For *Custom Bots*, *IP Addresses* and *Page Locations*, this is just a friendly name used to identify the classification, while for *Custom Event Parameters*, this must be the exact parameter name, typically in `snake_case` for example: `page_title`.
- 2. Choose a **Match Type** from the drop-down menu. Options include, equals, contains, starts with, ends with, regex, does not equal, does not contain, does not start with, does not end with and does not match regex.
+ 2. Choose a **Match Type** from the drop-down menu. Options include, equals, contains, starts with, ends with, regex, does not equal, does not contain, does not start with, does not end with, and, does not match regex.
  3. Enter a **Search** string. Note, regex options must be in a regular expression format.
- 4. Choose whether the search string is **Case Sensitive** or not. Default is case insensitive match.
- 5. Choose a **Classify As** classification string. This is the string returned by the GTM variable if a match was found
+ 4. Choose whether the search string is **Case Sensitive** or not. Default is not case sensitive.
+ 5. Choose a **Classify As** classification string. This is the string returned by the GTM variable if a match was found.
  6. One done hit **Add**.
    
  
